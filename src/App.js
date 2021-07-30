@@ -4,11 +4,13 @@ import Profile from './pages/Profile';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Links from './components/Links';
+import NavLink from './components/NavLinks';
 
 function App() {
   return (
     <BrowserRouter>
       <Links />
+      <NavLink />
       <Switch>
         <Route path="/profile/:id" component={Profile} />
         <Route path="/profile" component={Profile} />
